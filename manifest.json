@@ -1,0 +1,29 @@
+{
+    "name": "Swagger Auto Click",
+    "version": "1.0",
+    "description": "swagger auto click helper!",
+    "manifest_version": 2,
+    "permissions": [
+        "*://*/swagger/*",
+        "activeTab",
+        "background",
+        "webNavigation",
+        "tabs",
+        "contentSettings"
+    ],
+    "background": {
+        "page": "background.js",
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "*://*/swagger/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ]
+}
