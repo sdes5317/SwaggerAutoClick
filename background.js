@@ -1,5 +1,5 @@
 setTimeout(function () {
-    var apis = document.getElementsByClassName("opblock-summary-description");
+    var apis = document.getElementsByClassName("opblock opblock-get");
     for (let i = 0; i < apis.length; i++) {
         apis[i].addEventListener("click", function () {
             setTimeout(function () {
